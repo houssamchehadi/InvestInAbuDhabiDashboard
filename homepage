@@ -1,0 +1,9 @@
+##Please make sure to configure ADIO site to load the Permutive SDK in the head of Homepage HTML document. Full details on how to do this can be found in the 
+##Permutive Web Documentation > https://support.zephr.com/documentation/settings/extensions/permutive.
+##You need to add the below analytic feedback <script> inside the <HEAD> of ADIO Homepage page
+
+<!-- start Permutive -->
+<script>!function(n,e,o,r,i){if(!e){e=e||{},window.permutive=e,e.q=[],e.config=i||{},e.config.projectId=o,e.config.apiKey=r,e.config.environment=e.config.environment||"production";for(var t=["addon","identify","track","trigger","query","segment","segments","ready","on","once","user","consent"],c=0;c<t.length;c++){var f=t[c];e[f]=function(n){return function(){var o=Array.prototype.slice.call(arguments,0);e.q.push({functionName:n,arguments:o})}}(f)}}}(document,window.permutive,"e82dc6a7-79a5-49b7-b1ed-a89a37f2fe8b","62905692-4299-42af-951f-aa610546b2b1",{});permutive.addon('web', {});
+</script>
+<script async src="https://cdn.permutive.com/e82dc6a7-79a5-49b7-b1ed-a89a37f2fe8b-web.js"></script>
+<!-- end Permutive -->
