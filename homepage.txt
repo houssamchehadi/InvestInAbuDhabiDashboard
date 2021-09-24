@@ -1,9 +1,7 @@
-##Please make sure to configure ADIO site to load the Permutive SDK in the head of Homepage HTML document. Full details on how to do this can be found in the 
-##Permutive Web Documentation > https://support.zephr.com/documentation/settings/extensions/permutive.
-##You need to add the below analytic feedback <script> inside the <HEAD> of ADIO Homepage page
+##Please make sure to configure ADIO site to load the Permutive SDK in the head of Home-Page (Landing Page).
+##To do this you need to add the below feedback-analytic <script> inside the <HEAD></HEAD> section of ADIO's Home-Page Template.
+##For full details on how to do this, please refer to the Permutive Web Documentation > https://support.zephr.com/documentation/settings/extensions/permutive.
 
 <!-- start Permutive -->
-<script>!function(n,e,o,r,i){if(!e){e=e||{},window.permutive=e,e.q=[],e.config=i||{},e.config.projectId=o,e.config.apiKey=r,e.config.environment=e.config.environment||"production";for(var t=["addon","identify","track","trigger","query","segment","segments","ready","on","once","user","consent"],c=0;c<t.length;c++){var f=t[c];e[f]=function(n){return function(){var o=Array.prototype.slice.call(arguments,0);e.q.push({functionName:n,arguments:o})}}(f)}}}(document,window.permutive,"e82dc6a7-79a5-49b7-b1ed-a89a37f2fe8b","62905692-4299-42af-951f-aa610546b2b1",{});permutive.addon('web', {});
-</script>
-<script async src="https://cdn.permutive.com/e82dc6a7-79a5-49b7-b1ed-a89a37f2fe8b-web.js"></script>
+!function(e,n,t,r,o,i){if(!n){n=n||{},window.permutive=n,n.q=[],n.config=i||{},n.config.projectId=r,n.config.apiKey=o,n.config.environment=n.config.environment||"production";for(var c=["addon","identify","track","trigger","query","segment","segments","ready","on","once","user"],a=0;a<c.length;a++){var s=c[a];n[s]=function(e){return function(){var t=Array.prototype.slice.call(arguments,0);n.q.push({functionName:e,arguments:t})}}(s)}var p=window.Worker?"async":"blocking",g=e.createElement("script");g.type="text/javascript",g.async=!0;var m=("https:"==e.location.protocol?"https://":"http://")+"cdn.permutive.com";g.src=m+"/"+r+"-"+p+".js";var u=e.getElementsByTagName(t)[0];u.parentNode.insertBefore(g,u)}}(document,window.permutive,"script","e82dc6a7-79a5-49b7-b1ed-a89a37f2fe8b","62905692-4299-42af-951f-aa610546b2b1 ",{});permutive.addon("web", {});
 <!-- end Permutive -->
